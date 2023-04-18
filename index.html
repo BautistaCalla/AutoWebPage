@@ -2,6 +2,10 @@
 <html>
 <head>
   <title>Fancy Web Example</title>
+  <meta name="description" content="A fancy example web page with styles and JavaScript">
+  <meta name="keywords" content="example, web, page, styles, javascript">
+  <meta name="author" content="Your Name">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -9,8 +13,14 @@
       color: #333;
     }
 
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+    }
+
     h1 {
-      font-size: 2em;
+      font-size: 2.5em;
       text-align: center;
       margin-top: 50px;
     }
@@ -40,14 +50,36 @@
     button:hover {
       background-color: #666;
     }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+      margin-top: 50px;
+    }
+
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
   </style>
 </head>
 <body>
-  <div class="container">
+  <header>
     <h1>Welcome to the Fancy Web Example</h1>
-    <p>This is an example web page with some fancy styles and JavaScript.</p>
+  </header>
+  <div class="container">
+    <p>This is an example web page with some fancy styles and JavaScript. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean in velit nec odio elementum elementum id ac magna. Nullam congue, risus ut rutrum auctor, elit elit consequat sapien, in commodo ipsum lectus vitae mauris.</p>
+    <img src="https://picsum.photos/800/400" alt="Random Image">
+    <p>Donec malesuada, nisi ac ultrices mollis, nunc dui maximus felis, vel convallis massa mi eget enim. Suspendisse dictum magna et mauris vestibulum, at commodo augue malesuada. Sed blandit ante vitae leo faucibus, vel consequat augue commodo. Nulla bibendum nulla quis felis malesuada euismod. Nullam non eros non nibh vestibulum rutrum id quis lorem. Nullam porttitor ipsum eu libero fermentum commodo. Sed at purus eleifend, aliquet quam nec, commodo velit.</p>
     <button id="button">Click me!</button>
   </div>
+  <footer>
+    <p>Copyright &copy; 2023 - Your Name</p>
+  </footer>
   <script>
     const button = document.getElementById('button');
     button.addEventListener('click', () => {
@@ -56,3 +88,4 @@
   </script>
 </body>
 </html>
+
