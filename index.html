@@ -1,11 +1,58 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>My GitHub Pages Site</title>
-  </head>
-  <body>
-    <h1>Hello, world!</h1>
-    <p>This is my GitHub Pages site.</p>
-  </body>
-</html>
+<head>
+  <title>Fancy Web Example</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+      color: #333;
+    }
 
+    h1 {
+      font-size: 2em;
+      text-align: center;
+      margin-top: 50px;
+    }
+
+    p {
+      font-size: 1.2em;
+      line-height: 1.5;
+      text-align: justify;
+      margin: 20px 0;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    button {
+      padding: 10px 20px;
+      background-color: #333;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #666;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Welcome to the Fancy Web Example</h1>
+    <p>This is an example web page with some fancy styles and JavaScript.</p>
+    <button id="button">Click me!</button>
+  </div>
+  <script>
+    const button = document.getElementById('button');
+    button.addEventListener('click', () => {
+      alert('You clicked the button!');
+    });
+  </script>
+</body>
+</html>
