@@ -1,0 +1,15 @@
+name: Super Cool Workt Low
+on: push
+jobs:
+  cool_first_job:
+    runs-on: -ubuntu-latest
+    steps:
+      - name: LS Output before checkout
+        run: ls
+      - name: Checkout code
+        uses: actions/checkout@v3
+      - name: LS Output after checkout
+        run: ls
+
+# q: Its the above code correct?
+# a: Yes, it is correct.
