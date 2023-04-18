@@ -1,18 +1,16 @@
-name: Shellcheck
-
 on:
   push:
-    branches: [main]
+    branches:
+      - master
+
+name: "Trigger: Push action"
+permissions: {}
 
 jobs:
   shellcheck:
+    name: Shellcheck
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - name: Shellcheck
-        uses: koalaman/shellcheck-action@v0.7.1
-        with:
-          shell: sh
-        id: shellcheck
-      - name: Print shellcheck errors
-        run: echo "${{ steps.shellcheck.outputs.errors }}"
+      - uses: actions/checkout@v3
+      - name: Run ShellCheck
+        uses: ludeeus/action-shellcheck@master
