@@ -1,3 +1,5 @@
+# q: How do I run proselint on all markdown files in a repository?
+# Path: .github/workflows/simple.yaml
 name: MD CHeck
 on: push
 jobs:
@@ -6,9 +8,8 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
+      - name: Install proselint
+        run: pip install proselint
       - name: Run proselint on markdown files
         run: proselint *.md
 
-# q: Its the above code correct? In case it's not, lets write the correct code
-# a: The above code is correct. It will run proselint on all markdown files in the repository.
-  
